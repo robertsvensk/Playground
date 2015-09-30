@@ -1,0 +1,52 @@
+[user]
+	name = robertsvensk
+	email = robertsvensk91@gmail.com
+
+[color "branch"]
+    current = yellow bold
+    local = green bold
+    remote = cyan bold
+
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = red
+
+[push]
+	default = simple
+
+[core]
+	editor = gedit
+	exludesfile = /home/robert/.gitignore_global
+
+[diff]
+    tool = meld
+
+[difftool]
+    prompt = false
+
+[merge]
+	mergetool = meld
+	tool = meld
+
+[alias]
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    publish = "!git push -u origin $(git branch-name)"
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    smerge = merge --squash --no-commit
+	logtree = log --graph --oneline --decorate --all
+    diffc = diff --cached
+
+[help]
+    autocorrect = 1
