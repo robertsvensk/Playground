@@ -37,16 +37,18 @@
 	tool = meld
 
 [alias]
-    branch-name = "!git rev-parse --abbrev-ref HEAD"
-    publish = "!git push -u origin $(git branch-name)"
+	ec = config --global -e
+    	branch-name = "!git rev-parse --abbrev-ref HEAD"
+    	publish = "!git push -u origin $(git branch-name)"
+    	up = !git pull --rebase --prune
 	co = checkout
 	br = branch
 	ci = commit
 	st = status
-    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-    smerge = merge --squash --no-commit
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    	smerge = merge --squash --no-commit
 	logtree = log --graph --oneline --decorate --all
-    diffc = diff --cached
+    	diffc = diff --cached
 
 [help]
     autocorrect = 1
