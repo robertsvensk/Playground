@@ -1,4 +1,3 @@
-
 ;; This is a small problem instance for the standard Logistics domain,
 ;; as defined in "logistic.pddl".
 
@@ -94,7 +93,6 @@
      (spectruck truckHS)
      (spectruck truckHM)
      (spectruck truckHB)
-
      (smalltruck truckHS)
      (medtruck truckHM)
      (bigtruck truckHB)
@@ -131,7 +129,8 @@
      (loc officeC1 cityC) (loc airportC cityC)
 
      (loc officeD1 cityD) (loc officeD2 cityD) (loc officeD3 cityD) (loc trainstationD cityD)
-     (loc officeE1 cityE) (loc treinstationE cityE)
+     
+     (loc officeE1 cityE) (loc trainstationE cityE)
 
      (loc trainstationHS hubS) (loc airportHS hubS) (loc truckHS hubS)
      (loc trainstationHM hubM) (loc airportHM hubM) (loc truckHM hubM)
@@ -151,32 +150,34 @@
      (at packet7 officeD3)
 
      (at packet8 officeE1)
-     (at packet9 officeE4)
+     (at packet9 officeE1)
 
      (at truckA airportA)
      (at truckB officeB3)
      (at truckC officeC1)
      (at truckD officeD1)
-     (at truckE trinstationE)
+     (at truckE trainstationE)
 
-     (at airplane1 airportD)
+     (at airplane1 airportA)
 
      (at train1 trainstationD)
 
-     (at truckHS hubS)
-     (at truckHM hubM)
-     (at truckHB hubB)
+     (at truckHS airportHS)
+     (at truckHM trainstationHM)
+     (at truckHB airportHB)
      )
 
 ;; The goal is to have both packages delivered to their destinations:
 (:goal
-    (and(at packet1 officeC1)
+    (and
+        (at packet1 officeC1)
         (at packet2 officeE1)
-        (at packet3 officeD2)
-        (at packet4 officeD3)
-        (at packet5 officeC1)
-        (at packet6 officeE1)
-        (at packet7 officeB2)
-        (at packet8 officeB1)
-        (at packet9 officeA1)))
+ ;;       (at packet3 officeD2)
+ ;;       (at packet4 officeD3)
+ ;;       (at packet5 officeC1)
+ ;;       (at packet6 officeE1)
+ ;;       (at packet7 officeB2)
+ ;;       (at packet8 officeB1)
+ ;;       (at packet9 officeA1)
+        ))
 )
