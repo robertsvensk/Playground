@@ -117,20 +117,25 @@
      (location airportHS) (location airportHM) (location airportHB)
      (location trainstationHS) (location trainstationHM) (location trainstationHB)
 
+     (airport airportHS) (airport airportHM) (airport airportHB)
+     (trainstation trainstationHS) (trainstation trainstationHM) (trainstation trainstationHB)
+
+
      (airport airportA) (airport airportB) (airport airportC)
      (trainstation trainstationD) (trainstation trainstationE)
+
      (city cityA) (city cityB) (city cityC) (city cityD) (city cityE)
 
      (city hubS) (city hubM) (city hubB)
 
      ;; "loc" defines the topology of the problem,
-     (loc officeA1 cityA) (loc officeA2 cityA) (loc officeA3 cityA) (loc airportA cityA)
+     (loc officeA1 cityA) (loc officeA2 cityA) (loc officeA3 cityA) (loc officeA4 cityA) (loc airportA cityA)
      (loc officeB1 cityB) (loc officeB2 cityB) (loc officeB3 cityB) (loc officeB4 cityB) (loc airportB cityB)
-     (loc officeC1 cityC) (loc airportC cityC)
+     (loc officeC1 cityC) (loc officeC1 cityC) (loc officeC3 cityC) (loc officeC4 cityC) (loc airportC cityC)
 
-     (loc officeD1 cityD) (loc officeD2 cityD) (loc officeD3 cityD) (loc trainstationD cityD)
-     
-     (loc officeE1 cityE) (loc trainstationE cityE)
+     (loc officeD1 cityD) (loc officeD2 cityD) (loc officeD3 cityD) (loc officeD4 cityA) (loc trainstationD cityD)
+
+     (loc officeE1 cityE) (loc officeE2 cityA) (loc officeE3 cityA) (loc officeE4 cityA)(loc trainstationE cityE)
 
      (loc trainstationHS hubS) (loc airportHS hubS) (loc truckHS hubS)
      (loc trainstationHM hubM) (loc airportHM hubM) (loc truckHM hubM)
