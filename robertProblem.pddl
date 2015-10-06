@@ -58,6 +58,18 @@
      packet7
      packet8
      packet9
+     packet10
+     packet11
+     packet12
+     packet13
+     packet14
+     packet15
+     packet16
+     packet17
+     packet18
+     packet19
+     packet20
+     packet21
      )
 
   (:init
@@ -65,10 +77,22 @@
      (object packet1) (object packet2) (object packet3)
      (object packet4) (object packet5) (object packet6)
      (object packet7) (object packet8) (object packet9)
+     (object packet10) (object packet11) (object packet12)
+     (object packet13) (object packet14) (object packet15)
+     (object packet16) (object packet17) (object packet18)
+     (object packet19) (object packet20) (object packet21)
 
      (smallpacket packet1) (smallpacket packet2) (smallpacket packet3)
-     (mediumpacket packet4) (mediumpacket packet5) (mediumpacket packet6)
-     (bigpacket packet7) (bigpacket packet8) (bigpacket packet9)
+     (smallpacket packet4) (smallpacket packet5) (smallpacket packet6)
+     (smallpacket packet7)
+
+     (mediumpacket packet8) (mediumpacket packet9) (mediumpacket packet10)
+     (mediumpacket packet11) (mediumpacket packet12) (mediumpacket packet13)
+     (mediumpacket packet14)
+
+     (bigpacket packet15) (bigpacket packet16) (bigpacket packet17)
+     (bigpacket packet18) (bigpacket packet19) (bigpacket packet20)
+     (bigpacket packet21)
 
      ;; all vehicles must be declared as both "vehicle" and their
      ;; appropriate subtype,
@@ -146,16 +170,25 @@
      (at packet1 officeA1)
      (at packet2 officeA2)
      (at packet3 officeA3)
-
      (at packet4 officeB1)
      (at packet5 officeB3)
-
      (at packet6 officeC1)
-
      (at packet7 officeD3)
-
      (at packet8 officeE1)
-     (at packet9 officeE1)
+     (at packet9 officeE2)
+     (at packet10 officeE1)
+     (at packet11 officeA2)
+     (at packet12 officeE3)
+     (at packet13 officeB4)
+     (at packet14 officeE1)
+     (at packet15 officeE4)
+     (at packet16 officeB3)
+     (at packet17 officeB2)
+     (at packet18 officeE3)
+     (at packet19 officeD4)
+     (at packet20 officeC3)
+     (at packet21 officeA1)
+
 
      (at truckA airportA)
      (at truckB officeB3)
@@ -176,13 +209,27 @@
 (:goal
     (and
         (at packet1 officeC1)
-        (at packet2 officeE1)
- ;;       (at packet3 officeD2)
- ;;       (at packet4 officeD3)
- ;;       (at packet5 officeC1)
- ;;       (at packet6 officeE1)
- ;;       (at packet7 officeB2)
- ;;       (at packet8 officeB1)
- ;;       (at packet9 officeA1)
+        ;;(at packet2 officeE1)
+        ;;(at packet3 officeD2)
+        ;;(at packet4 officeD3)
+        ;;(at packet5 officeC1)
+        ;;(at packet6 officeE1)
+        ;;(at packet7 officeB2)
+        ;;(at packet8 officeB1)
+        ;;(at packet9 officeA1)
+        ;;(at packet10 officeE1)
+        ;;(at packet11 officeE3)
+        ;;(at packet12 officeA4)
+        ;;(at packet13 officeB3)
+        ;;(at packet14 officeC2)
+        ;;(at packet15 officeB2)
+        ;;(at packet16 officeE3)
+        ;;(at packet17 officeC2)
+        ;;(at packet18 officeA3)
+        ;;(at packet19 officeE2)
+        ;;(at packet20 officeD2)
+        ;;(at packet21 officeC1)
+
         ))
 )
+
